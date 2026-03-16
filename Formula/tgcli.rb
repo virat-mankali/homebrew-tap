@@ -5,21 +5,21 @@
 class Tgcli < Formula
   desc "Blazing-fast terminal-based Telegram client built on MTProto"
   homepage "https://github.com/virat-mankali/telegram-cli"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/virat-mankali/telegram-cli/releases/download/v1.0.0/tgcli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "8570bfc171bb219732a4209d9948c867541f6c732971d6fadadcdc81bf4edf98"
+      url "https://github.com/virat-mankali/telegram-cli/releases/download/v1.1.0/tgcli_1.1.0_darwin_amd64.tar.gz"
+      sha256 "626f210fafd11c857db6e99828fbc5f34bea6dcd930bfd1594ec36159c1bef9f"
 
       define_method(:install) do
         bin.install "tgcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/virat-mankali/telegram-cli/releases/download/v1.0.0/tgcli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "cc62de293b487d6aab8f1063cd66e9eb3026cf0dca073da625cf4870cf3c5355"
+      url "https://github.com/virat-mankali/telegram-cli/releases/download/v1.1.0/tgcli_1.1.0_darwin_arm64.tar.gz"
+      sha256 "a78ccfc65fbd5a9f6d98239bea11bf71afdf3f22a60baad10fe595cd3d195653"
 
       define_method(:install) do
         bin.install "tgcli"
@@ -29,15 +29,15 @@ class Tgcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/virat-mankali/telegram-cli/releases/download/v1.0.0/tgcli_1.0.0_linux_amd64.tar.gz"
-      sha256 "c1b85570cd6f96770f5a58d9a8bf6f334fa0ac495b10caa2a6a8e2fc82ec24f1"
+      url "https://github.com/virat-mankali/telegram-cli/releases/download/v1.1.0/tgcli_1.1.0_linux_amd64.tar.gz"
+      sha256 "fa059aabc1a7d07adde7e204c20e3414cceb9df9d930615dd466934d92f47959"
       define_method(:install) do
         bin.install "tgcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/virat-mankali/telegram-cli/releases/download/v1.0.0/tgcli_1.0.0_linux_arm64.tar.gz"
-      sha256 "9cb13f850284e14ec6f5fcb86bdcca4300743847366e8d5aafdf3ff7cfacd54e"
+      url "https://github.com/virat-mankali/telegram-cli/releases/download/v1.1.0/tgcli_1.1.0_linux_arm64.tar.gz"
+      sha256 "8742cf9fd71b4ef8534859f0d96b543c0c53a4855515f68ce4184d7cba2edfb7"
       define_method(:install) do
         bin.install "tgcli"
       end
