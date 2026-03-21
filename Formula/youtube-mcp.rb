@@ -10,7 +10,7 @@ class YoutubeMcp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/virat-mankali/youtube-mcp/releases/download/v1.0.0/youtube-mcp_1.0.0_darwin_amd64.tar.gz"
-      sha256 "8d89eb83469f862b5e3d061b0f720521e60a104012daff9e7a81ddee211b8abe"
+      sha256 "59403ac055d3698506f1c8f07fb2ed12ee1ee0df0b8929965d6054b59a3a5ead"
 
       define_method(:install) do
         bin.install "yt"
@@ -18,7 +18,7 @@ class YoutubeMcp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/virat-mankali/youtube-mcp/releases/download/v1.0.0/youtube-mcp_1.0.0_darwin_arm64.tar.gz"
-      sha256 "6ac657e6a72d62af730e5cd234a139ae3edc404e7104b90be8aea7cac1bde713"
+      sha256 "94a3c3e16f3ab4cdc9b093e7d2a738467fe0218bdc5fe19bc1b0d705acc625b3"
 
       define_method(:install) do
         bin.install "yt"
@@ -29,14 +29,14 @@ class YoutubeMcp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/virat-mankali/youtube-mcp/releases/download/v1.0.0/youtube-mcp_1.0.0_linux_amd64.tar.gz"
-      sha256 "3677ef89a4f7cfd1179e1308b6e4779b5130d8039d8def08bf54e1026c5bb660"
+      sha256 "f273ac5f0438ed1ac8bf802131c5cfb356ef883ef9314571fcef52d3698e1000"
       define_method(:install) do
         bin.install "yt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/virat-mankali/youtube-mcp/releases/download/v1.0.0/youtube-mcp_1.0.0_linux_arm64.tar.gz"
-      sha256 "e9796929ffe207f9351e4ee1e3acae3182fdc949d9b34e968cda191226dc0d10"
+      sha256 "d82b2a3454e405ac5a96581394214b19f21647bdb3a0302c51420f202715b736"
       define_method(:install) do
         bin.install "yt"
       end
