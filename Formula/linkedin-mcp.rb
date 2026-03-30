@@ -4,21 +4,21 @@
 class LinkedinMcp < Formula
   desc "LinkedIn CLI and MCP tool for humans and AI agents"
   homepage "https://github.com/virat-mankali/linkedin-mcp"
-  version "1.0.5"
+  version "1.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/virat-mankali/linkedin-mcp/releases/download/v1.0.5/linkedin-mcp_1.0.5_darwin_amd64.tar.gz"
-      sha256 "7162d1d129333ba93c102eec00c67e70da3a9b771f686a0e5458cad477e9fa3e"
+      url "https://github.com/virat-mankali/linkedin-mcp/releases/download/v1.0.6/linkedin-mcp_1.0.6_darwin_amd64.tar.gz"
+      sha256 "305c024326bcc9eb543e58ed9861fa05288d04a942a48cddf30bde7d84608376"
 
       define_method(:install) do
         bin.install "li"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/virat-mankali/linkedin-mcp/releases/download/v1.0.5/linkedin-mcp_1.0.5_darwin_arm64.tar.gz"
-      sha256 "e98168bf23112632b840bcdda14d42ddb312960ba2f041697e6967faaea373ee"
+      url "https://github.com/virat-mankali/linkedin-mcp/releases/download/v1.0.6/linkedin-mcp_1.0.6_darwin_arm64.tar.gz"
+      sha256 "f9e867b19791682101a394777c9821b95759fe181c0913671b43d5a361953168"
 
       define_method(:install) do
         bin.install "li"
@@ -28,15 +28,15 @@ class LinkedinMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/virat-mankali/linkedin-mcp/releases/download/v1.0.5/linkedin-mcp_1.0.5_linux_amd64.tar.gz"
-      sha256 "f86bf979f7e2f2bd91c7c91524548e083f07b25d0d193c890298cbdbcbd74aa0"
+      url "https://github.com/virat-mankali/linkedin-mcp/releases/download/v1.0.6/linkedin-mcp_1.0.6_linux_amd64.tar.gz"
+      sha256 "6581d6b2b90655b4d670ae711faab3e62c3ad962e069940bf7a5033f11bb0603"
       define_method(:install) do
         bin.install "li"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/virat-mankali/linkedin-mcp/releases/download/v1.0.5/linkedin-mcp_1.0.5_linux_arm64.tar.gz"
-      sha256 "087144e791eaaa6f01f3569ce8dade13b56415113f8b51e56b7bcc974154b82e"
+      url "https://github.com/virat-mankali/linkedin-mcp/releases/download/v1.0.6/linkedin-mcp_1.0.6_linux_arm64.tar.gz"
+      sha256 "9158d895bdc59733f6ec94e4a64ec1fb8d3b0800d6ee582fad138b5b897b8b86"
       define_method(:install) do
         bin.install "li"
       end
